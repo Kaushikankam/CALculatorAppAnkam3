@@ -5,9 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:backgroundTint="#31000000"
+    android:backgroundTint="#B3B5B4"
+    android:onClick="power"
     tools:context=".MainActivity">
 
+
+    <Button
+        android:id="@+id/divide2"
+        android:layout_width="88dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#3E3939"
+        android:onClick="divide"
+
+
+        android:text="P"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/square"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:backgroundTint="#3E3939"
+        android:onClick="square"
+
+        android:text="x²"
+        android:textSize="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/plus"
@@ -38,16 +74,50 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379"
+        app:layout_constraintVertical_bias="0.381"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/square3"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:backgroundTint="#3E3939"
+        android:onClick="root"
+
+        android:text="√"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/square2"
+        android:layout_width="89dp"
+        android:layout_height="84dp"
+        android:backgroundTint="#3E3939"
+        android:onClick="power"
+
+        android:text="x^y"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/multiply"
-        android:layout_width="83dp"
-        android:layout_height="85dp"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
         android:backgroundTint="#3E3939"
         android:onClick="multiply"
 
@@ -56,10 +126,28 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
+        app:layout_constraintVertical_bias="0.38"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ac"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="clear"
+
+
+        android:text="AC"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -82,10 +170,10 @@
 
     <EditText
         android:id="@+id/no1"
-        android:layout_width="184dp"
+        android:layout_width="172dp"
         android:layout_height="66dp"
         android:ems="10"
-        android:hint="number 1"
+        android:hint="number 1 or x"
 
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,31 +186,34 @@
 
     <EditText
         android:id="@+id/no2"
-        android:layout_width="216dp"
-        android:layout_height="61dp"
+        android:layout_width="208dp"
+        android:layout_height="66dp"
         android:ems="10"
-        android:hint="number 2"
+        android:hint="number 2 or y"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191"
+        app:layout_constraintVertical_bias="0.192"
         tools:ignore="MissingConstraints" />
+
 
     <EditText
         android:id="@+id/result"
-        android:layout_width="201dp"
-        android:layout_height="155dp"
+        android:layout_width="283dp"
+        android:layout_height="259dp"
         android:ems="10"
         android:inputType="number"
+        android:text=" "
         android:textSize="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
 
