@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CALculatorAppAnkam</string>
-    <string name="size">50dp</string>
-    <string name="textsize">75dp</string>
+    <string name="n1text">number 1 or x</string>
+    <string name="n2text">number 2 or y</string>
 
 </resources>

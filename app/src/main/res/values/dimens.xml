@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <dimen name="psize">50dp</dimen>
+
+    <dimen name="isize">45dp</dimen>
+    </resources>
+
+

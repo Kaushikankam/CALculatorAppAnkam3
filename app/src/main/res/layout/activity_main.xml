@@ -11,31 +11,13 @@
 
 
     <Button
-        android:id="@+id/divide2"
-        android:layout_width="88dp"
-        android:layout_height="90dp"
-        android:backgroundTint="#3E3939"
-        android:onClick="divide"
-
-
-        android:text="P"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/square"
         android:layout_width="84dp"
         android:layout_height="83dp"
         android:backgroundTint="#3E3939"
         android:onClick="square"
 
-        android:text="x²"
+        android:text="  x²"
         android:textSize="39dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,8 +35,8 @@
         android:onClick="Add"
 
 
-        android:text="+"
-        android:textSize="45dp"
+        android:text="  +"
+        android:textSize="@dimen/isize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.018"
@@ -67,11 +49,12 @@
         android:id="@+id/minus"
         android:layout_width="84dp"
         android:layout_height="83dp"
-        android:backgroundTint="#3E3939"
-        android:onClick="minus"
+        android:background="#000000"
+        android:backgroundTint="#B3B5B4"
 
-        android:text="-"
-        android:textSize="50dp"
+        android:onClick="minus"
+        android:text="  -"
+        android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.321"
@@ -87,7 +70,7 @@
         android:backgroundTint="#3E3939"
         android:onClick="root"
 
-        android:text="√"
+        android:text="  √"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,8 +87,8 @@
         android:backgroundTint="#3E3939"
         android:onClick="power"
 
-        android:text="x^y"
-        android:textSize="23dp"
+        android:text="  x^y"
+        android:textSize="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.645"
@@ -122,8 +105,8 @@
         android:onClick="multiply"
 
 
-        android:text="×"
-        android:textSize="50dp"
+        android:text="  ×"
+        android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.64"
@@ -134,8 +117,8 @@
 
     <Button
         android:id="@+id/ac"
-        android:layout_width="95dp"
-        android:layout_height="94dp"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
         android:backgroundTint="#FF9800"
         android:onClick="clear"
 
@@ -147,7 +130,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.534"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -158,14 +141,14 @@
         android:onClick="divide"
 
 
-        android:text="÷"
+        android:text="  ÷"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374"
+        app:layout_constraintVertical_bias="0.379"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -173,7 +156,8 @@
         android:layout_width="172dp"
         android:layout_height="66dp"
         android:ems="10"
-        android:hint="number 1 or x"
+        android:hint="@string/n1text"
+        android:textSize="23dp"
 
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -189,7 +173,8 @@
         android:layout_width="208dp"
         android:layout_height="66dp"
         android:ems="10"
-        android:hint="number 2 or y"
+        android:hint="@string/n2text"
+        android:textSize="23dp"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
