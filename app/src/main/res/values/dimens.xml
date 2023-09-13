@@ -2,7 +2,7 @@
 <resources>
  <dimen name="psize">50dp</dimen>
 
-    <dimen name="isize">45dp</dimen>
+    <dimen name="isize">39dp</dimen>
     </resources>
 
 

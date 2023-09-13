@@ -17,8 +17,8 @@
         android:backgroundTint="#3E3939"
         android:onClick="square"
 
-        android:text="  x²"
-        android:textSize="39dp"
+        android:text="x²"
+        android:textSize="@dimen/isize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.015"
@@ -35,8 +35,8 @@
         android:onClick="Add"
 
 
-        android:text="  +"
-        android:textSize="@dimen/isize"
+        android:text="+"
+        android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.018"
@@ -46,32 +46,14 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/minus"
-        android:layout_width="84dp"
-        android:layout_height="83dp"
-        android:background="#000000"
-        android:backgroundTint="#B3B5B4"
-
-        android:onClick="minus"
-        android:text="  -"
-        android:textSize="@dimen/psize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.321"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/square3"
         android:layout_width="84dp"
         android:layout_height="83dp"
         android:backgroundTint="#3E3939"
         android:onClick="root"
 
-        android:text="  √"
-        android:textSize="50dp"
+        android:text="√"
+        android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.339"
@@ -87,8 +69,8 @@
         android:backgroundTint="#3E3939"
         android:onClick="power"
 
-        android:text="  x^y"
-        android:textSize="37dp"
+        android:text="x^y"
+        android:textSize="28.3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.645"
@@ -105,7 +87,7 @@
         android:onClick="multiply"
 
 
-        android:text="  ×"
+        android:text="×"
         android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,6 +95,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.38"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        android:backgroundTint="#3E3939"
+        android:onClick="minus"
+
+
+        android:text="-"
+        android:textSize="@dimen/psize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -124,13 +124,13 @@
 
 
         android:text="AC"
-        android:textSize="35dp"
+        android:textSize="29dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534"
+        app:layout_constraintVertical_bias="0.529"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -141,8 +141,8 @@
         android:onClick="divide"
 
 
-        android:text="  ÷"
-        android:textSize="50dp"
+        android:text="÷"
+        android:textSize="@dimen/psize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.975"
@@ -199,6 +199,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/preview"
+        android:layout_width="408dp"
+        android:layout_height="55dp"
+        android:text=" "
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
         tools:ignore="MissingConstraints" />
 
 
